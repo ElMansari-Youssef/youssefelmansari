@@ -86,7 +86,7 @@ header .mobile-menu {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 10rem;
+    width: 13rem;
     height: 100vh;
     padding: 1rem 2.5rem 1rem 1rem;
     gap: 1rem;
@@ -909,8 +909,10 @@ textarea {
 
 }
 
-@media (max-width: 412px) {
+@media (max-width: 392px) {
 
+    .skillsContainer>div:nth-child(3) p {
+        font-size: 14px;
+    }
 
-    
 }
