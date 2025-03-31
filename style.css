@@ -40,7 +40,7 @@ a {
 }
 
 .border {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 /* classes  */
@@ -241,27 +241,33 @@ header .arrowUp {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    opacity: 0;
+    transition: all 0.6s ease;
+    
 }
 
 header a {
 
     color: #fff;
+   
 }
 
 /* Header END */
 
 
-/* Main Section END */
+/* Main Section Start */
 #main {
 
     background-color: white;
-    height: 50vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
     padding-top: 5rem;
+    
 
 }
 
@@ -300,7 +306,8 @@ header a {
     line-height: 2rem;
     font-weight: 400;
     color: var(--gray);
-    /* padding-bottom: 5rem; */
+    /* border: 2px solid red; */
+    max-height: fit-content;
 
 }
 
@@ -351,9 +358,9 @@ header a {
 
 #skills {
     background-color: var(--primaryColor);
-    height: 65vh;
+    height: 100vh;
     color: #fff;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -775,11 +782,12 @@ textarea {
 @media (max-width: 771px) {
 
     .Txt-contact {
-
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
+        align-self: center;
+        gap: 2rem;
+        
+       
     }
 
     .Txt-contact .Text {
@@ -788,9 +796,8 @@ textarea {
     }
 
     #main {
-        margin-bottom: 20rem;
-        height: 80vh;
-        /* padding-top: 5rem; */
+        height: auto;
+        padding-bottom: 2rem;
     }
 
     .aboutMeTxt {
